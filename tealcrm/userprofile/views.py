@@ -13,7 +13,7 @@ def signup(request):
 
             Userprofile.objects.create(user=user)
 
-            return redirect('/log-in/')
+            return redirect('log-in/')
     else:
         form = UserCreationForm()
 
